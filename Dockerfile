@@ -1,7 +1,5 @@
 FROM node:8
 
-RUN npm install -g npm@latest
-
 # Xvfb
 
 RUN apt-get update -qqy \
