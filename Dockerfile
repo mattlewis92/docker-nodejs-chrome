@@ -1,4 +1,6 @@
-FROM node:8-slim
+FROM node:8
+
+RUN npm install -g npm@latest
 
 # Xvfb
 
