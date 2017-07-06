@@ -1,7 +1,12 @@
 FROM node:8
 
 # NPM latest
-RUN npm install -g npm@latest
+
+RUN cd ~ \
+	&& npm install npm@latest \
+	&& rm -rf /usr/local/lib/node_modules \
+	&& mv node_modules /usr/local/lib/
+
 
 # Xvfb
 
