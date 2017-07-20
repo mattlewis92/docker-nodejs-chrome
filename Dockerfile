@@ -1,13 +1,5 @@
 FROM node:8
 
-# NPM latest
-
-RUN cd ~ \
-	&& npm install npm@latest \
-	&& rm -rf /usr/local/lib/node_modules \
-	&& mv node_modules /usr/local/lib/
-
-
 # Xvfb
 
 RUN apt-get update -qqy \
